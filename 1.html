@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+/* 设置 iframe 的样式 */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 设置链接的样式 */
+a {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+</style>
+</head>
+<body>
+<!-- 在主体部分放置一个 iframe，src 属性设置为当前页面的地址，name 属性设置为 myframe -->
+<iframe src="old/index.html" name="myframe"></iframe>
+<!-- 在右下角放置一个链接，href 属性设置为新页面的地址，target 属性设置为 myframe -->
+<a href="new/index.html" target="myframe">切换新版</a>
+</body>
+</html>
